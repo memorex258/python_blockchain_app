@@ -18,7 +18,7 @@ Install the dependencies,
 
 ```sh
 $ cd python_blockchain_app
-$ pip install -r requirements.txt
+$ pip3 install -r requirements.txt --user
 ```
 
 Start a blockchain node server,
@@ -35,7 +35,7 @@ One instance of our blockchain node is now up and running at port 8000.
 Run the application on a different terminal session,
 
 ```sh
-$ python run_app.py
+$ python3 run_app.py
 ```
 
 The application should be up and running at [http://localhost:5000](http://localhost:5000).
@@ -44,15 +44,15 @@ Here are a few screenshots
 
 1. Posting some content
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/1.png)
+![image.png](https://github.com/memorex258/python_blockchain_app/raw/master/screenshots/1.png)
 
 2. Requesting the node to mine
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/2.png)
+![image.png](https://github.com/memorex258/python_blockchain_app/raw/master/screenshots/2.png)
 
 3. Resyncing with the chain for updated data
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/3.png)
+![image.png](https://github.com/memorex258/python_blockchain_app/raw/master/screenshots/3.png)
 
 To play around by spinning off multiple custom nodes, use the `register_with/` endpoint to register a new node. 
 

@@ -24,7 +24,7 @@ class Block:
 
 class Blockchain:
     # difficulty of our PoW algorithm
-    difficulty = 2
+    difficulty = 1
 
     def __init__(self):
         self.unconfirmed_transactions = []
@@ -150,7 +150,7 @@ peers = set()
 @app.route('/new_transaction', methods=['POST'])
 def new_transaction():
     tx_data = request.get_json()
-    required_fields = ["author", "content"]
+    required_fields = ["buyer", "seller", "quantity"]
 
     for field in required_fields:
         if not tx_data.get(field):

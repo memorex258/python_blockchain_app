@@ -50,12 +50,14 @@ def submit_textarea():
     """
     Endpoint to create a new transaction via our application.
     """
-    post_content = request.form["content"]
-    author = request.form["author"]
+    post_quantity = request.form["quantity"]
+    buyer = request.form["buyer"]
+    seller = request.form["seller"]
 
     post_object = {
-        'author': author,
-        'content': post_content,
+        'buyer': buyer,
+        'quantity': post_quantity,
+        'seller': seller,
     }
 
     # Submit a transaction

@@ -2,6 +2,8 @@
 
 A simple tutorial for developing a blockchain application from scratch in Python. Is based on work from satwikkansal. I just wanted to learn how to put this together and made a few changes to understand how data can be stored in a transacation.
 
+runs using python 2.7
+
 ## What is blockchain? How it is implemented? And how it works?
 
 Please read the [step-by-step implementation tutorial](https://www.ibm.com/developerworks/cloud/library/cl-develop-blockchain-app-in-python/index.html) to get your answers :)
@@ -18,26 +20,27 @@ Install the dependencies,
 
 ```sh
 $ cd python_blockchain_app
-$ pip3 install -r requirements.txt --user
+$ pip install -r requirements.txt --user
 ```
 
 Start a blockchain node server,
 
 ```sh
 # Windows users can follow this: https://flask.palletsprojects.com/en/1.1.x/cli/#application-discovery
+$ screen
 $ export FLASK_APP=node_server.py
-$ flask run
+$ flask run --port 8000 --host 0.0.0.0
+
 ```
 
 One instance of our blockchain node is now up and running at port 8000.
 
 
-Run the application on a different terminal session,
-
+Run the application on a different terminal session by pressing,
+ctl+a then ctl+c
 ```sh
-$ screen
 $ cd python_blockchain_app
-$ python3 run_app.py
+$ python run_app.py
 ```
 
 The application should be up and running at [http://localhost:5000](http://localhost:5000).

@@ -26,7 +26,7 @@ Start a blockchain node server,
 ```sh
 # Windows users can follow this: https://flask.palletsprojects.com/en/1.1.x/cli/#application-discovery
 $ export FLASK_APP=node_server.py
-$ flask run --port 8000 --host 0.0.0.0
+$ flask run
 ```
 
 One instance of our blockchain node is now up and running at port 8000.
@@ -35,6 +35,8 @@ One instance of our blockchain node is now up and running at port 8000.
 Run the application on a different terminal session,
 
 ```sh
+$ screen
+$ cd python_blockchain_app
 $ python3 run_app.py
 ```
 

@@ -1,6 +1,6 @@
 # python_blockchain_app
 
-A simple tutorial for developing a blockchain application from scratch in Python.
+A simple tutorial for developing a blockchain application from scratch in Python. Is based on work from satwikkansal. I just wanted to learn how to put this together and made a few changes to understand how data can be stored in a transacation.
 
 ## What is blockchain? How it is implemented? And how it works?
 
@@ -11,7 +11,7 @@ Please read the [step-by-step implementation tutorial](https://www.ibm.com/devel
 Clone the project,
 
 ```sh
-$ git clone https://github.com/satwikkansal/python_blockchain_app.git
+$ git clone https://github.com/memorex258/python_blockchain_app.git
 ```
 
 Install the dependencies,
